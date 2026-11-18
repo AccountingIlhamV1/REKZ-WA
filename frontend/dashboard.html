@@ -1,0 +1,27 @@
+<!doctype html><html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#0b1f3a"><meta name="description" content="REKZ CONTROL: panel kontrol Rekz (Stage 1, antarmuka saja)."><title>Dashboard · REKZ CONTROL</title><link rel="stylesheet" href="css/style.css"></head><body><header class="site-header"><div class="bar"><p class="brand">REKZ CONTROL<small>Panel kontrol REKZ WA</small></p><nav aria-label="Utama"><ul><li><a href="dashboard.html">Dashboard</a></li><li><a href="dashboard.html#sleep">Sleep Mode</a></li><li><a href="settings.html#privacy">Privacy</a></li><li><a href="settings.html#academic">Academic</a></li><li><a href="dashboard.html#activity">Aktivitas</a></li></ul></nav></div></header><main>
+<h1>Dashboard REKZ WA</h1>
+<p class="banner"><strong>Stage 1 — antarmuka saja.</strong> WhatsApp dan database belum terhubung. Tidak ada pesan nyata yang diterima atau dikirim.</p>
+<section aria-labelledby="h-status"><h2 id="h-status">Status sistem</h2>
+<div class="grid">
+<dl class="card"><dt>Status sistem</dt><dd id="st-system">Offline</dd></dl>
+<dl class="card"><dt>Sleep Mode</dt><dd id="st-sleep">Nonaktif</dd></dl>
+<dl class="card"><dt>Auto Reply</dt><dd id="st-auto">Tidak aktif</dd></dl>
+<dl class="card"><dt>Privacy Protection</dt><dd id="st-privacy">Strict</dd></dl>
+<dl class="card"><dt>Koneksi database</dt><dd>Belum terhubung</dd></dl>
+<dl class="card"><dt>Koneksi WhatsApp</dt><dd>Belum terhubung</dd></dl>
+</div></section>
+<section aria-labelledby="h-sum"><h2 id="h-sum">Ringkasan aktivitas <span class="badge">DEMO</span></h2>
+<div class="grid">
+<div class="card"><p class="num">24</p><p>Pesan contoh <span class="badge">DEMO</span></p></div>
+<div class="card"><p class="num">18</p><p>Balasan contoh <span class="badge">DEMO</span></p></div>
+<div class="card"><p class="num">3</p><p>Perlu Owner Takeover (contoh) <span class="badge">DEMO</span></p></div>
+</div></section>
+<section id="sleep" aria-labelledby="h-sleep"><h2 id="h-sleep">Sleep Mode</h2>
+<div class="card"><p>Mode aktivasi: <strong>manual</strong>. Saat aktif, auto-reply disiapkan (simulasi tampilan saja).</p>
+<div class="btns"><button type="button" id="btn-on">Aktifkan Sleep Mode</button><button type="button" id="btn-off" class="secondary">Nonaktifkan Sleep Mode</button></div>
+<p id="sleep-status" role="status" aria-live="polite"></p></div></section>
+<section id="activity" aria-labelledby="h-act"><h2 id="h-act">System Activity</h2>
+<p class="card">Keamanan: Privacy Strict, Owner Takeover aktif, tanpa API key di frontend. <span class="badge">DEMO</span> = contoh; <span class="badge local">LOKAL</span> = aksi Anda di perangkat ini.</p>
+<ul id="log" class="log" aria-label="Log aktivitas"></ul></section>
+</main><footer>REKZ CONTROL · Stage 1 · antarmuka tanpa backend.</footer>
+<script type="module" src="js/nav.js"></script><script type="module" src="js/dashboard.js"></script></body></html>
